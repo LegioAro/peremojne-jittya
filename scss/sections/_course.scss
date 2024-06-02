@@ -1,0 +1,129 @@
+.course {
+  margin-bottom: 196px;
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 580px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    color: var(--color-3);
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 1%;
+    padding-left: 25px;
+    list-style-type: disc;
+    margin-bottom: 30px;
+  }
+
+  &__list-i {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  &__inputs {
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-family: var(--font-text);
+
+    color: var(--color-3);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    padding: 16px 31px;
+    margin-bottom: 15px;
+
+    &::placeholder {
+      color: var(--color-3);
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.novalid {
+      background-color: #df8c8c;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 539px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .course {
+    &__wrapper {
+      align-items: flex-start;
+    }
+    &__content {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .course {
+    &__content {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .course {
+    margin-bottom: 100px;
+    &__wrapper {
+      flex-direction: column-reverse;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    &__img {
+      max-width: 400px;
+      margin: 0 auto 30px;
+    }
+    &__content {
+      align-items: center;
+      margin-right: 0;
+      max-width: 100%;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}

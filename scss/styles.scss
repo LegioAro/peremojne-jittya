@@ -1,0 +1,30 @@
+//Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+@import './global/mixins';
+
+//Moduls
+@import './moduls/title';
+@import './moduls/btn';
+
+//Blocks
+
+//Sections
+@import './sections/header';
+@import './sections/cover';
+@import './sections/about';
+@import './sections/quotation';
+@import './sections/questions';
+@import './sections/excerpt';
+@import './sections/speakers';
+@import './sections/lessons';
+@import './sections/description';
+@import './sections/advantages';
+@import './sections/program';
+@import './sections/feedback';
+@import './sections/video';
+@import './sections/callback';
+@import './sections/course';
+@import './sections/footer';

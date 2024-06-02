@@ -1,0 +1,18 @@
+body {
+  background-color: #fafafa;
+  color: var(--color-1);
+  font-family: var(--font-text);
+  font-weight: normal;
+  position: relative;
+  overflow-x: hidden;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

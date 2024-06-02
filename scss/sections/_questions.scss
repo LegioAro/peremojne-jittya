@@ -1,0 +1,170 @@
+.questions {
+  margin-bottom: 268px;
+  &__wrapper {
+    width: 100%;
+    max-width: 1033px;
+    margin: 0 auto;
+    height: 533px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 275px;
+
+    span {
+      @include text-gradient;
+      background-image: var(--gradient);
+      font-weight: 700;
+    }
+  }
+
+  &__items {
+  }
+
+  &__item {
+    padding: 15px 26px;
+    border-radius: 100px;
+    box-shadow: 0px 4px 100px 0px rgba(92, 10, 174, 0.05);
+    background: #fff;
+    max-width: fit-content;
+    color: rgb(97, 97, 126);
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: var(--color-3);
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    &--1 {
+      top: 10px;
+      left: 28px;
+    }
+    &--2 {
+      top: 0px;
+      right: 83px;
+    }
+    &--3 {
+      top: 130px;
+      left: 370px;
+    }
+    &--4 {
+      top: 190px;
+      left: 0px;
+    }
+    &--5 {
+      top: 155px;
+      right: 0px;
+    }
+    &--6 {
+      bottom: 143px;
+      left: 6px;
+    }
+    &--7 {
+      bottom: 122px;
+      right: 0;
+    }
+    &--8 {
+      bottom: 0;
+      left: 95px;
+    }
+    &--9 {
+      bottom: 15px;
+      right: 249px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .questions {
+    &__title {
+      font-size: 30px;
+    }
+    &__item {
+      &--2 {
+        right: 0px;
+      }
+      &--3 {
+        left: 240px;
+      }
+      &--9 {
+        right: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .questions {
+    &__item {
+      font-size: 12px;
+      padding: 10px 20px;
+
+      &--1 {
+        top: 50px;
+      }
+      &--3 {
+        top: 120px;
+        left: 150px;
+      }
+      &--5 {
+        top: 170px;
+      }
+      &--6 {
+        bottom: 120px;
+      }
+      &--9 {
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .questions {
+    &__wrapper {
+      height: auto;
+    }
+    &__title {
+      padding-top: 0;
+      margin-bottom: 30px;
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    &__item {
+      position: relative;
+
+      br {
+        display: none;
+      }
+
+      &--1,
+      &--2,
+      &--3,
+      &--4,
+      &--5,
+      &--6,
+      &--7,
+      &--8,
+      &--9 {
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+      }
+    }
+  }
+}

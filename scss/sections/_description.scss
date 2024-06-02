@@ -1,0 +1,127 @@
+.description {
+  margin-bottom: 184px;
+  position: relative;
+
+  &__decor {
+    position: absolute;
+    width: 584px;
+    height: 1140px;
+    left: 0;
+    top: 274px;
+    background-image: url(../img/decor/3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 842px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 9px;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 36px;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 370px;
+  }
+
+  &__dec {
+    text-align: right;
+
+    font-size: 230.32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    -webkit-text-fill-color: transparent; /* Ширина и цвет обводки */
+    -webkit-text-stroke: 1.8px var(--color-2); /* Цвет текста */
+
+    margin-right: 54px;
+    margin-bottom: -70px;
+  }
+
+  &__title {
+  }
+
+  &__img {
+    margin-bottom: 110px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+
+  &__list-i {
+    color: var(--color-2);
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    margin-bottom: 80px;
+    &__dec {
+      font-size: 180px;
+      -webkit-text-stroke: 1.3px var(--color-2); /* Цвет текста */
+    }
+    &__title-block {
+      max-width: 320px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .description {
+    &__decor {
+      width: 300px;
+    }
+    &__content {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__title-block {
+      margin: 0 auto 20px;
+    }
+    &__img {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    &__list {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .description {
+    &__dec {
+      font-size: 150px;
+      margin-bottom: -50px;
+    }
+  }
+}

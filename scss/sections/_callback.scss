@@ -1,0 +1,111 @@
+.callback {
+  margin-bottom: 184px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 82px 132px;
+
+    border-radius: 20px;
+    box-shadow: 0px 4px 100px 0px rgba(92, 10, 174, 0.03);
+    background-image: var(--gradient);
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 544px;
+    margin: 0 auto 21px;
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 145%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  &__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-column-gap: 8px;
+    grid-row-gap: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 16px 16px 16px 35px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: var(--color-3);
+
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+    &::placeholder {
+      color: var(--color-3);
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+    &.novalid {
+      background-color: #df8c8c;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: var(--color-2);
+    font-family: var(--font-text);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 1%;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 900px) {
+  .callback {
+    margin-bottom: 100px;
+    &__wrapper {
+      padding: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .callback {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 700px) {
+  .callback {
+    &__wrapper {
+      padding: 50px 20px;
+      max-width: 400px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__content {
+      grid-template-columns: 1fr;
+    }
+    &__btn {
+      padding: 18px;
+    }
+  }
+}

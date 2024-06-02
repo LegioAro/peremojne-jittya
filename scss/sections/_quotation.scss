@@ -1,0 +1,114 @@
+.quotation {
+  margin-bottom: 191px;
+  position: relative;
+
+  &__dec {
+    position: absolute;
+    width: 473px;
+    height: 962px;
+    left: 0;
+    bottom: 360px;
+    background-image: url(../img/decor/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+
+  &__wrapper {
+    color: #fff;
+    background-image: url('../img/quotation/bg.png');
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 440px;
+    position: absolute;
+    left: 100px;
+    bottom: 93px;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    max-width: 332px;
+    font-size: 16px;
+    line-height: 145%;
+    letter-spacing: 1%;
+    margin-bottom: 17px;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    p {
+      font-size: 16px;
+      line-height: 145%;
+      letter-spacing: 1%;
+      margin-right: 11px;
+    }
+  }
+
+  &__date-icon {
+    width: 100%;
+    max-width: 26px;
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .quotation {
+    margin-bottom: 100px;
+    &__wrapper {
+      min-height: 400px;
+    }
+    &__content {
+      left: 50px;
+      bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .quotation {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 550px) {
+  .quotation {
+    &__dec {
+      width: 300px;
+    }
+    &__wrapper {
+      min-height: auto;
+      padding: 50px 20px;
+    }
+    &__content {
+      position: relative;
+      left: auto;
+      bottom: auto;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
