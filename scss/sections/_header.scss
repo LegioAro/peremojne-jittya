@@ -1,8 +1,23 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 126px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 42px 0;
+  z-index: 100;
+  transition: 0.3s;
+
+  &--scroll {
+    padding: 20px 0;
+    backdrop-filter: blur(20px);
+    background-color: rgba(#fff, 0.4);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__logo {
     width: 100%;
@@ -24,6 +39,11 @@
     }
   }
 
+  &__btn {
+    max-width: 250px;
+    padding: 15px 10px;
+  }
+
   &__info-title {
     font-weight: 600;
   }
@@ -33,9 +53,20 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .header {
+    &__infos {
+      flex-direction: column;
+    }
+    &__info {
+      display: flex;
+      margin-right: 0;
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .header {
-    margin-bottom: 100px;
     &__info {
       margin-right: 40px;
     }
@@ -52,34 +83,57 @@
 
 @media (max-width: 768px) {
   .header {
-    margin-bottom: 50px;
+    padding: 20px 0;
     flex-direction: column;
-    &__logo {
-      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    &__btn {
+      p {
+        font-size: 14px;
+      }
+      max-width: 180px;
     }
   }
 }
 
 @media (max-width: 600px) {
   .header {
-    &__info {
-      font-size: 12px;
+    &__btn {
+      p {
+        display: none;
+      }
+      .btn__icon {
+        margin-right: 0;
+        max-width: 30px;
+      }
+      max-width: fit-content;
+      padding: 15px;
     }
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 450px) {
   .header {
-    margin-bottom: 20px;
-    &__infos {
+    &__info {
+      display: none;
+      &:nth-child(1) {
+        display: flex;
+      }
       flex-direction: column;
     }
-    &__info {
-      margin-right: 0;
-      margin-bottom: 5px;
-      &:last-child {
-        margin-bottom: 0;
-      }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__logo {
+      max-width: 120px;
+    }
+    &__btn {
+      padding: 10px;
     }
   }
 }
