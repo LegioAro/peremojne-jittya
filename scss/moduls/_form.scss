@@ -1,0 +1,148 @@
+.form {
+  width: 100%;
+  max-width: 1180px;
+  padding: 78px 40px;
+  box-shadow: 0px 2.97436px 74.359px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  min-height: 530px;
+
+  &--tmpl-2 {
+    min-height: 384px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    span {
+      color: #5d5fef;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: -0.84px;
+    margin-bottom: 32px;
+  }
+
+  &__inputs {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__input-block {
+    width: 100%;
+    position: relative;
+    max-width: 428px;
+    margin: 0 auto 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    border-radius: 16px;
+
+    background: rgb(239, 240, 247);
+    font-family: var(--font-text);
+    color: rgb(110, 113, 145);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 0.75px;
+    width: 100%;
+    border: 0;
+    padding: 20px 24px;
+    transition: 0.3s;
+
+    &:focus {
+    }
+
+    &::placeholder {
+      color: rgb(110, 113, 145);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 166%;
+      letter-spacing: 0.75px;
+    }
+
+    &.novalid {
+      border: 0.74359px solid #ea3030;
+      & + .form__input-text {
+        display: block;
+      }
+    }
+  }
+
+  &__input-text {
+    font-weight: 400;
+    font-size: 14.8718px;
+    line-height: 145%;
+    color: #ea3030;
+    text-align: left;
+    position: absolute;
+    left: 24px;
+    top: calc(100% + 3px);
+    display: none;
+
+    &.novalid {
+      display: block;
+    }
+  }
+
+  &__btn {
+    max-width: 428px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: rgb(93, 95, 239);
+    width: 100%;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px 10px;
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.75px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__btn-icon {
+    display: flex;
+    width: 24px;
+    position: relative;
+    z-index: 2;
+    margin-left: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    &__title {
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    min-height: 535px;
+    padding: 65px 20px 50px;
+
+    &--tmpl-2 {
+      min-height: 284px;
+    }
+  }
+}
