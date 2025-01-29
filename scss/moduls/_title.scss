@@ -21,7 +21,8 @@
 
     span {
       background-image: none;
-      background-color: rgb(93, 95, 239);
+      color: rgb(93, 95, 239);
+      @include text-gradient-default;
     }
 
     &--fz-60 {

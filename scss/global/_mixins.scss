@@ -4,3 +4,10 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+
+@mixin text-gradient-default {
+  -webkit-background-clip: border-box; /* значение по умолчанию */
+  -webkit-text-fill-color: initial; /* значение по умолчанию */
+  background-clip: border-box; /* значение по умолчанию */
+  text-fill-color: initial;
+}
