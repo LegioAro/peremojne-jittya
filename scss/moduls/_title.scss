@@ -8,6 +8,7 @@
   span {
     background-image: var(--gradient);
     @include text-gradient;
+    line-height: 125%;
   }
 
   &--fz-60 {
